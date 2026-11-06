@@ -1,0 +1,117 @@
+% =====================================================================
+%  Test Plan  --  MCI Vorlage
+%  Option "final" blendet alle blauen Hinweistexte aus:
+%     \documentclass[plan,final]{mcitestdoc}
+% =====================================================================
+\documentclass[plan]{mcitestdoc}
+
+% --- Dokumentdaten (ersetzen die roten Platzhalter) ------------------
+% \doctitle{Fatigue Test of Bracket XY}
+% \docnumber{TP26-001}
+% \docrevision{1.0}
+% \originator{Max Mustermann}
+
+\begin{document}
+\makeheader
+
+% ---------------------------------------------------------------------
+\section{Facility}
+\hint{Name of testing facility(ies).}
+
+% ---------------------------------------------------------------------
+\section{Related Documents}
+\hint{List related documents (standards, papers, etc.).}
+
+% ---------------------------------------------------------------------
+\section{Background}
+\hint{Provide a brief scope of the test including a statement on the devices to be tested.}
+
+% ---------------------------------------------------------------------
+\section{Purpose}
+\hint{Define specific objectives of the test plan.}
+
+% ---------------------------------------------------------------------
+\section{Responsibilities}
+\hint{Name in tabular format the responsibilities within your testing team.}
+
+\begin{table}[H]
+  \caption{Responsibilities within the testing team}
+  \label{tab:responsibilities}
+  \begin{tabularx}{\linewidth}{|p{0.35\linewidth}|L|}
+    \hline
+    \hd{Role:} & \hd{Responsibility:} \\ \hline
+    \strutrow & \\ \hline
+    \strutrow & \\ \hline
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Materials / Equipment}
+
+\subsection{Description of Test Items}
+\begin{hintblock}
+\begin{itemize}
+  \item The section shall include a description of the materials, design and technology of the device being tested.
+  \item Describe the technical status of the test samples and applicable technical documentation. Declare the building process.
+  \item Type, part number, model number, serial number, or other identification shall be stated.
+  \item Part of this is usually outsourced to specifications / drawings of the devices under test.
+\end{itemize}
+\end{hintblock}
+
+\subsection{Sampling Rationale}
+\hint{Justify the intended sample size in this section (reference to standards, or other documentation/calculation).}
+
+\subsection{Measuring Instrument and Test Equipment}
+\hint{State the intended measuring instrument and test equipment.}
+
+% ---------------------------------------------------------------------
+\section{Method}
+\begin{hintblock}
+\begin{itemize}
+  \item The method shall provide instructions on how the test is to be conducted, including the segregation, labeling, sampling, and testing of test articles. Ideally this should be done in the most user friendly way and include step-by-step instructions and images of the steps to be performed.
+  \item Test methodologies required for the test plan shall be described. Required special measuring / test conditions other than ambient shall be given.
+  \item Test data to be collected shall be defined.
+  \item Required measuring/test conditions (e.g.\ temperature, relative humidity, \dots)
+\end{itemize}
+\end{hintblock}
+
+% ---------------------------------------------------------------------
+\section{Acceptance Criteria}
+\hint{The acceptance criteria for the test plan shall be consistent with the scope and objectives of the Test Plan. Acceptance criteria shall take into account the measurement uncertainties introduced by the measurement equipment and/or the measurement method.}
+
+% ---------------------------------------------------------------------
+\section{Data Analysis}
+\hint{This section defines the methods used for calculating and analyzing test data. Methods used to analyze the data shall be described in detail to include the subject of any comparisons, test parameters, types of analysis, and confidence limits for each test.}
+
+% ---------------------------------------------------------------------
+\section{Final Report}
+\hint{A brief statement explaining the contents of the final report and how and to whom the test results shall be presented.}
+
+% ---------------------------------------------------------------------
+\section{Attachments}
+\begin{hintblock}
+The list of attachments includes, but is not limited to:
+\begin{enumerate}
+  \item Test cases
+  \item Data collection sheets as a basis for the test records
+  \item Flowcharts, diagrams, engineering drawings and/or specifications unless referenced into other documents
+\end{enumerate}
+\end{hintblock}
+
+% ---------------------------------------------------------------------
+\section{Revision Information}
+\begin{table}[H]
+  \caption{Revision history}
+  \label{tab:revisions}
+  \begin{tabularx}{\linewidth}{|p{0.12\linewidth}|p{0.12\linewidth}|L|p{0.22\linewidth}|}
+    \hline
+    \hd{Rev.} & \hd{Issue} & \hd{Description of Change} & \hd{Originator:} \\ \hline
+    1 & 0 & Release & \theoriginator \\ \hline
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Signatures}
+\signaturetable
+
+\end{document}

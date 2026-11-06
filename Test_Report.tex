@@ -1,0 +1,112 @@
+% =====================================================================
+%  Test Report  --  MCI Vorlage
+%  Option "final" blendet alle blauen Hinweistexte aus:
+%     \documentclass[report,final]{mcitestdoc}
+% =====================================================================
+\documentclass[report]{mcitestdoc}
+
+% --- Dokumentdaten (ersetzen die roten Platzhalter) ------------------
+% \doctitle{Fatigue Test of Bracket XY}
+% \docnumber{RP26-001}
+% \docrevision{1.0}
+% \originator{Max Mustermann}
+
+\begin{document}
+\makeheader
+
+% ---------------------------------------------------------------------
+\section{Facility}
+\hint{Name of testing facility(ies).}
+
+% ---------------------------------------------------------------------
+\section{Related Documents}
+\hint{List related documents (standards, papers, etc.).}
+
+% ---------------------------------------------------------------------
+\section{Responsibilities}
+\hint{Name in tabular format the responsibilities within your testing team.}
+
+\begin{table}[H]
+  \caption{Responsibilities within the testing team}
+  \label{tab:responsibilities}
+  \begin{tabularx}{\linewidth}{|p{0.27\linewidth}|p{0.27\linewidth}|L|}
+    \hline
+    \hd{Role:} & \hd{Name:} & \hd{Responsibility:} \\ \hline
+    \strutrow & & \\ \hline
+    \strutrow & & \\ \hline
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Equipment Used}
+\hint{List all equipment used during testing in the table below, along with equipment number and calibration due date (if applicable).}
+
+\begin{table}[H]
+  \caption{Equipment used}
+  \label{tab:equipment}
+  \begin{tabularx}{\linewidth}{|p{0.27\linewidth}|L|p{0.27\linewidth}|}
+    \hline
+    \hd{Equipment Number} & \hd{Device / Equipment Description} & \hd{Calibration due/date} \\ \hline
+    \strutrow & & \\ \hline
+    \strutrow & & \\ \hline
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Test Items}
+\hint{Describes the items tested, including quantities, serial numbers, part numbers and sizes, where appropriate.}
+
+% ---------------------------------------------------------------------
+\section{Abstract}
+\hint{Provides a brief overview of the final report to include the success or failure of reaching the intended objectives.}
+
+% ---------------------------------------------------------------------
+\section{Deviations to the Test Plan}
+\hint{All deviations to the Test Plan shall be identified in a separate section of the final report. Each deviation shall be discussed in relation to its impact, if any, on the Test Plan objectives and final report analysis.}
+
+% ---------------------------------------------------------------------
+\section{Discussion and Summary of Results}
+\begin{hintblock}
+The conduct and results of the test shall be summarized to include the following information:
+\begin{enumerate}
+  \item Date(s) the Test Plan was conducted, test operator(s), equipment number (incl.\ calibration due date), material lot(s) used, as appropriate.
+  \item Description of how the Test Plan was performed.
+  \item Summary of actual performance compared to the acceptance criteria and any unexpected results.
+  \item Appropriate references to all records or data used to explain results or demonstrate compliance to the acceptance criteria.
+\end{enumerate}
+\end{hintblock}
+
+% ---------------------------------------------------------------------
+\section{Data Analysis}
+\begin{hintblock}
+Explains the analytical methods and data calculations upon which any conclusions or recommendations are based.
+\begin{enumerate}
+  \item The results of the analyses shall be explained in terms of the Test Plan objectives and acceptance criteria.
+  \item The data analyses shall be summarized and presented in a clearly understood format, i.e., with the use of tables, graphs, etc.
+\end{enumerate}
+\end{hintblock}
+
+% ---------------------------------------------------------------------
+\section{Conclusion and Recommendations}
+
+% ---------------------------------------------------------------------
+\section{Attachments}
+\hint{Attachments to the final report shall include data collection sheets, reports, test results, electronic raw data (e.g.\ recording of test equipment), drawings, calibration records and other supporting documents (e.g.\ source code).}
+
+% ---------------------------------------------------------------------
+\section{Revision Information}
+\begin{table}[H]
+  \caption{Revision history}
+  \label{tab:revisions}
+  \begin{tabularx}{\linewidth}{|p{0.12\linewidth}|p{0.12\linewidth}|L|p{0.22\linewidth}|}
+    \hline
+    \hd{Rev.} & \hd{Issue} & \hd{Description of Change} & \hd{Originator:} \\ \hline
+    1 & 0 & Release & \theoriginator \\ \hline
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Signatures}
+\signaturetable
+
+\end{document}
